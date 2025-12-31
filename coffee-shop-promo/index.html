@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Coffee - Кав'ярня твого міста</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Aroma Coffee</a>
+            <nav class="nav" id="nav">
+                <a href="#hero" class="nav__link">Головна</a>
+                <a href="#about" class="nav__link">Про нас</a>
+                <a href="#menu" class="nav__link">Меню</a>
+                <a href="#contact" class="nav__link">Контакти</a>
+            </nav>
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container hero__content">
+            <h1>Смак, що надихає</h1>
+            <p>Справжня арабіка, затишна атмосфера та десерти власного виробництва.</p>
+            <a href="#menu" class="btn">Переглянути меню</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section__title">Про нашу кав'ярню</h2>
+            <div class="about-content" style="max-width: 900px; margin: 0 auto; text-align: justify; font-size: 18px; line-height: 1.8;">
+                <p style="margin-bottom: 20px;">
+                    Історія <strong>Aroma Coffee</strong> розпочалася у 2023 році з простої мрії — створити місце, де час уповільнюється, а кожен ковток кави дарує справжню насолоду. Ми віримо, що кав'ярня — це не просто заклад громадського харчування, а простір для натхнення, теплих зустрічей та народження нових ідей.
+                </p>
+                <p style="margin-bottom: 20px;">
+                    Наші бариста — це сертифіковані майстри своєї справи, які пройшли навчання у найкращих школах України. Вони знають про каву все: від особливостей вирощування зерна до тонкощів налаштування помелу. Ми використовуємо виключно 100% арабіку класу Specialty та професійне італійське обладнання La Marzocco, що дозволяє розкрити найтонші ноти смаку в кожній чашці.
+                </p>
+                <p>
+                    Окрім кави, ми пишаємося нашою власною кондитерською. Щоранку наші пекарі випікають свіжі круасани, чізкейки та тартолетки, використовуючи лише натуральні інгредієнти. Ми відмовилися від заморожених напівфабрикатів на користь якості та свіжості. Завітайте до нас, щоб відчути атмосферу затишку та скуштувати каву, яку ми готуємо з любов'ю.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <h2 class="section__title">Наше Меню</h2>
+            
+            <div class="menu-grid">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=2670&auto=format&fit=crop" alt="Капучино">
+                    </div>
+                    <h3>Капучино</h3>
+                    <p>Класичний італійський напій з ніжною пінкою</p>
+                    <span class="price">65 грн</span>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://www.vkusnyblog.com/wp-content/uploads/2020/04/croissants-15.jpg" alt="Круасан">
+                    </div>
+                    <h3>Круасан</h3>
+                    <p>Свіжа випічка з шоколадом або джемом</p>
+                    <span class="price">55 грн</span>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://eco-buffet.com/wp-content/uploads/2023/05/vehanskyj-matcha-late.jpg" alt="Матча Латте">
+                    </div>
+                    <h3>Матча Латте</h3>
+                    <p>Японський зелений чай з кокосовим молоком</p>
+                    <span class="price">85 грн</span>
+                </div>
+
+                 <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?q=80&w=2671&auto=format&fit=crop" alt="Чізкейк">
+                    </div>
+                    <h3>Чізкейк</h3>
+                    <p>Ніжний сирний десерт з лісовими ягодами</p>
+                    <span class="price">90 грн</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="section__title">Зв'яжіться з нами</h2>
+            
+            <form id="contactForm" class="form">
+                <input type="text" name="name" placeholder="Ваше ім'я" required class="form__input">
+                <input type="email" name="email" placeholder="Ваш Email" required class="form__input">
+                <textarea name="message" placeholder="Ваше повідомлення або відгук" required class="form__input" rows="5"></textarea>
+                
+                <div style="display: none;">
+                    <input type="text" name="honeypot" value="">
+                </div>
+
+                <button type="submit" class="btn btn--submit">Надіслати відгук</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aroma Coffee. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
